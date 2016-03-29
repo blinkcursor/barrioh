@@ -1,0 +1,63 @@
+@import "canonical"; // reset
+
+html {
+	background-color: #251303;
+}
+
+body {
+	max-width: 1280px;
+	font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: #fff;
+}
+
+.closed {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: url(closed_p.jpg) #251303 bottom left no-repeat;
+	background-size: cover;
+}
+
+@media screen and (min-width: 540px) {
+	.closed {
+		background: url(closed.jpg) #251303 bottom left no-repeat;
+		background-size: cover;
+	}
+}
+
+main {
+	margin-top: 100vh;
+	width: 540px;
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 80px;
+	& img {
+		width: 400px;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		padding: 80px 0;
+	}
+}
+
+footer {
+	width: 540px;
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1em;
+	font-size: 16px;
+	color: #ccc;
+}
+
+a, a:visited, a:active {
+	color: inherit;
+	text-decoration: underline;
+}
+
